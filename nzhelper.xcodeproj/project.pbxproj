@@ -13,7 +13,7 @@
 		3BE478091B845E39001495A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE478081B845E39001495A3 /* Images.xcassets */; };
 		3BE4780C1B845E39001495A3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BE4780A1B845E39001495A3 /* LaunchScreen.xib */; };
 		3BE478181B845E39001495A3 /* nzhelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE478171B845E39001495A3 /* nzhelperTests.swift */; };
-		921E22E7F2824FAE3B61BDC1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B527913FA169F0B30379C26C /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		921E22E7F2824FAE3B61BDC1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B527913FA169F0B30379C26C /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,11 +183,13 @@
 		3BE477F41B845E39001495A3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = com.flytokiwi;
 				TargetAttributes = {
 					3BE477FB1B845E39001495A3 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = W8Z5PW2FDD;
 					};
 					3BE478101B845E39001495A3 = {
 						CreatedOnToolsVersion = 6.4;
@@ -351,6 +353,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -366,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -404,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -416,8 +419,10 @@
 			baseConfigurationReference = 716CB7D22AAF7B22976C367E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = nzhelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flytokiwi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -427,8 +432,10 @@
 			baseConfigurationReference = 290CBCABF23E0902F4442D82 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = nzhelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flytokiwi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -447,6 +454,7 @@
 				);
 				INFOPLIST_FILE = nzhelperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flytokiwi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nzhelper.app/nzhelper";
 			};
@@ -462,6 +470,7 @@
 				);
 				INFOPLIST_FILE = nzhelperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flytokiwi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nzhelper.app/nzhelper";
 			};
