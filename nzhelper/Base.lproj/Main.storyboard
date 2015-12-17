@@ -80,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" enabled="NO" title="EOI打分" image="First" id="2pn-GP-s5R"/>
+                    <tabBarItem key="tabBarItem" title="EOI打分" image="First" id="2pn-GP-s5R"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83I-ZI-8mX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,35 +170,61 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="infoCell" rowHeight="120" id="Acq-US-Fea" customClass="InfoTableViewCell" customModule="nzhelper" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="120"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="infoCell" rowHeight="91" id="Acq-US-Fea" customClass="InfoTableViewCell" customModule="nzhelper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="91"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Acq-US-Fea" id="U1d-Ti-Oyx">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="119"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hts-Ct-dEe">
-                                                    <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="House" translatesAutoresizingMaskIntoConstraints="NO" id="Hts-Ct-dEe">
+                                                    <rect key="frame" x="10" y="10" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="77q-qO-dwI"/>
+                                                        <constraint firstAttribute="width" constant="70" id="UWr-8Z-acY"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJf-as-UAL">
-                                                    <rect key="frame" x="118" y="10" width="351" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJf-as-UAL">
+                                                    <rect key="frame" x="90" y="10" width="410" height="10"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detail" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTq-Sm-TwN">
-                                                    <rect key="frame" x="118" y="50" width="474" height="61"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Detail" lineBreakMode="wordWrap" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTq-Sm-TwN">
+                                                    <rect key="frame" x="90" y="30" width="500" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4T-Hz-nmS">
-                                                    <rect key="frame" x="477" y="10" width="115" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4T-Hz-nmS">
+                                                    <rect key="frame" x="510" y="10" width="80" height="10"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="4rL-S6-4aF"/>
+                                                        <constraint firstAttribute="height" constant="10" id="tOd-xE-ZMg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Hts-Ct-dEe" firstAttribute="top" secondItem="U1d-Ti-Oyx" secondAttribute="top" constant="10" id="12v-fb-fNI"/>
+                                                <constraint firstItem="lTq-Sm-TwN" firstAttribute="top" secondItem="q4T-Hz-nmS" secondAttribute="bottom" constant="10" id="68I-PI-gMA"/>
+                                                <constraint firstAttribute="trailing" secondItem="q4T-Hz-nmS" secondAttribute="trailing" constant="10" id="CLp-FO-1ps"/>
+                                                <constraint firstItem="q4T-Hz-nmS" firstAttribute="leading" secondItem="HJf-as-UAL" secondAttribute="trailing" constant="10" id="HBn-Ae-hif"/>
+                                                <constraint firstAttribute="trailing" secondItem="lTq-Sm-TwN" secondAttribute="trailing" constant="10" id="PA8-7Y-oas"/>
+                                                <constraint firstItem="q4T-Hz-nmS" firstAttribute="top" secondItem="U1d-Ti-Oyx" secondAttribute="top" constant="10" id="UWR-mK-iZf"/>
+                                                <constraint firstItem="lTq-Sm-TwN" firstAttribute="top" secondItem="HJf-as-UAL" secondAttribute="bottom" constant="10" id="UwN-vg-Rng"/>
+                                                <constraint firstItem="lTq-Sm-TwN" firstAttribute="leading" secondItem="Hts-Ct-dEe" secondAttribute="trailing" constant="10" id="WYd-vm-RmX"/>
+                                                <constraint firstItem="lTq-Sm-TwN" firstAttribute="leading" secondItem="Hts-Ct-dEe" secondAttribute="trailing" constant="10" id="c3l-J3-qI1"/>
+                                                <constraint firstItem="HJf-as-UAL" firstAttribute="leading" secondItem="Hts-Ct-dEe" secondAttribute="trailing" constant="10" id="gMa-Ph-VEf"/>
+                                                <constraint firstAttribute="bottom" secondItem="Hts-Ct-dEe" secondAttribute="bottom" constant="10" id="h4Z-Yp-hnb"/>
+                                                <constraint firstItem="Hts-Ct-dEe" firstAttribute="leading" secondItem="U1d-Ti-Oyx" secondAttribute="leading" constant="10" id="iJh-bW-c02"/>
+                                                <constraint firstItem="q4T-Hz-nmS" firstAttribute="leading" secondItem="HJf-as-UAL" secondAttribute="trailing" constant="10" id="krM-aZ-95f"/>
+                                                <constraint firstAttribute="bottom" secondItem="lTq-Sm-TwN" secondAttribute="bottom" constant="10" id="r4m-bt-EEX"/>
+                                                <constraint firstItem="lTq-Sm-TwN" firstAttribute="top" secondItem="q4T-Hz-nmS" secondAttribute="bottom" constant="10" id="siL-4D-Ydr"/>
+                                                <constraint firstItem="HJf-as-UAL" firstAttribute="top" secondItem="U1d-Ti-Oyx" secondAttribute="top" constant="10" id="yQ4-Un-eJP"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="detailLabel" destination="lTq-Sm-TwN" id="Y0B-zy-hYN"/>
@@ -266,5 +292,6 @@
     </scenes>
     <resources>
         <image name="First" width="30" height="30"/>
+        <image name="House" width="84" height="56"/>
     </resources>
 </document>
